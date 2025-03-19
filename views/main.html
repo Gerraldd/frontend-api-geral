@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pemesanan Tiket Pesawat</title>
+
+  <!-- Kode ini agar bisa menggunakan package file CSS Bootstrap
+     yang disimpan di folder css -->
+  <link href="../public/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="text-center fw-bold text-stroke bg-light p-3 mb-3 rounded-4">
+      Pemesanan Tiket Pesawat
+    </h1>
+
+    <div class="d-flex justify-content-between mb-2">
+      <a href="tambahPemesan.html" class="btn btn-warning fw-bold">Tambah Pemesan</a>
+      <div class="d-flex gap-2">
+        <input type="text" placeholder="Cari Berdasarkan Nama Pemesan" class="form-control w-auto" id="searchInput" />
+        <button class="btn btn-secondary" id="searchBtn">Cari</button>
+      </div>
+    </div>
+
+    <h2>Data Pemesan</h2>
+    <table class="table table-bordered mt-3 text-center">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>ID Pemesan</th>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>Nomor Telepon</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="data-table">
+        <!-- Data pemesan -->
+      </tbody>
+    </table>
+  </div>
+
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="searchModalLabel">Hasil Pencarian</h5>
+        </div>
+        <div class="modal-body" id="modal-body-content">
+          <!-- Hasil pencarian -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-sm me-auto" data-bs-dismiss="modal" aria-label="Close">
+            Kembali
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kode ini agar bisa menggunakan package file JavaScript Bootstrap
+     yang disimpan di folder js -->
+  <script src="../public/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Kode ini memanggil file main.js agar bisa mengintegrasikan ke APInya -->
+  <script src="../public/js/main.js"></script>
+</body>
+</html>
+

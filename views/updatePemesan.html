@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit Pemesan</title>
+    <link href="../public/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center fw-bold">Edit Pemesan</h1>
+        <form id="editForm">
+            <div class="mb-3">
+                <label for="edit_id_pemesan" class="form-label">ID Pemesan</label>
+                <input type="number" class="form-control" id="edit_id_pemesan" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="edit_nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="edit_nama" required>
+            </div>
+            <div class="mb-3">
+                <label for="edit_email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="edit_email" required>
+            </div>
+            <div class="mb-3">
+                <label for="edit_nomor_telepon" class="form-label">Nomor Telepon</label>
+                <input type="text" class="form-control" id="edit_nomor_telepon" required>
+            </div>
+            <button type="submit" class="btn btn-success">Update</button>
+            <a href="main.html" class="btn btn-danger">Kembali</a>
+        </form>
+    </div>
+
+    <script src="../public/js/main.js"></script>
+</body>
+</html>
+

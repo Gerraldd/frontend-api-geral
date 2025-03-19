@@ -1,0 +1,20 @@
+{
+  "name": "projek_api_geral",
+  "version": "0.1.0",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon api.js"
+  },
+  "author": "Geral",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7",
+    "pg": "^8.13.1"
+  }
+}
