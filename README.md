@@ -81,8 +81,8 @@ CREATE TABLE pemesan (
 
 1. Clone repository:
    ```bash
-   git clone https://github.com/Gerraldd/project-website-api.git
-   cd project-website-api
+   git clone https://github.com/Gerraldd/frontend-api-geral.git
+   cd frontend-api-geral
    ```
 
 2. Install dependencies:
