@@ -19,6 +19,7 @@ Sebuah project sederhana untuk **Front-End - Integrasi API** yang menampilkan da
 
 - **HTML5**
 - **CSS3**
+- **Bootstrap 5** (untuk styling)
 - **JavaScript**
 - **Node.js**
 - **Express.js**
@@ -42,6 +43,36 @@ Sebuah project sederhana untuk **Front-End - Integrasi API** yang menampilkan da
 │   └── hapusPemesan.html  # Form hapus data
 ├── package.json          # Konfigurasi project Node.js
 ├── .gitignore            # File gitignore
+```
+
+---
+
+## 🗄️ Database Structure
+
+### Database: `pemesanan_tiket_pesawat`
+
+### Table: `pemesan`
+
+| Field           | Type         | Description               |
+|-----------------|--------------|---------------------------|
+| id_pemesanan    | SERIAL       | Primary key               |
+| nama            | VARCHAR(100) | Nama pemesan              |
+| email           | VARCHAR(100) | Email pemesan             |
+| nomor_telepon   | VARCHAR(20)  | Nomor telepon pemesan     |
+
+---
+
+## 📜 SQL to Create Table
+
+```sql
+-- Database: pemesanan_tiket_pesawat
+
+CREATE TABLE pemesan (
+    id_pemesanan SERIAL PRIMARY KEY,
+    nama VARCHAR(100),
+    email VARCHAR(100),
+    nomor_telepon VARCHAR(20)
+);
 ```
 
 ---
@@ -75,7 +106,7 @@ Sebuah project sederhana untuk **Front-End - Integrasi API** yang menampilkan da
 
 ## 📸 Screenshot Tampilan
 
-> ![Tampilan Website](https://via.placeholder.com/800x400.png?text=Screenshot+Tampilan+Website+Kamu)
+> ![Tampilan Website](/public/image/preview.png)
 
 ---
 
