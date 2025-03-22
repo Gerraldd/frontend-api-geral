@@ -112,7 +112,7 @@ CREATE TABLE pemesan (
 
 ## 👨‍💻 About Developer
 
-**Nama :** Geral <br>
+**Nama :** Muhammad Geral Herpavy <br>
 **Username :** Gerraldd<br>
 **Kelas :** XI - Front-End Developer SMK  
 
